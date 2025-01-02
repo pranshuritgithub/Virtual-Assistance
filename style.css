@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; /* Use viewport height */
+    width: 100vw; /* Use viewport width */
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    margin-top: 30px;
+    height: 20vw; /* Responsive height */
+    max-height: 300px; /* Maximum height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    font-family: "Protest Guerrilla", sans-serif;
+    margin-top: 15px;
+    text-align: center; /* Center align text */
+}
+
+#name {
+    color: rgb(239, 54, 196);
+    font-size: 5vw; /* Responsive font size */
+}
+
+#va {
+    color: aqua;
+    font-size: 5vw; /* Responsive font size */
+}
+
+#voice {
+    width: 10%;
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+}
+
+#btn {
+    margin-top: 10px;
+    width: 60%; /* Responsive width */
+    max-width: 6f00px; /* Maximum width */
+    height: 45px;
+    background: linear-gradient(to right, rgb(21, 145, 207), rgb(201, 41, 116));
+    font-size: 2.5vw; /* Responsive font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 3px 3px 12px rgb(21, 145, 207), 3px 3px 12px rgb(201, 41, 116);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#btn:hover {
+    box-shadow: 3px 3px 20px rgb(21, 145, 207), 3px 3px 20px rgb(201, 41, 116);
+    letter-spacing: 2px;
+}
+
+/* Media Queries for additional responsiveness */
+@media (max-width: 768px) {
+    #logo {
+        height: 30vw; /* Adjust logo size for smaller screens */
+    }
+
+    #name, #va {
+        font-size: 6vw; /* Increase font size for smaller screens */
+    }
+
+    #btn {
+        width: 80%; /* Increase button width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        height: 40vw; /* Further adjust logo size */
+    }
+
+    #name, #va {
+        font-size: 8vw; /* Further increase font size */
+    }
+
+    #btn {
+        height: 50px; /* Increase button height */
+    }
+}
